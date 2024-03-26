@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--First Background layer: Color-->
+    <item android:drawable="@drawable/bg_color"/>
+
+    <!--Second Background layer: Gradient Tinting-->
+    <item   android:drawable="@drawable/bg_gradient"/>
+
+</layer-list>

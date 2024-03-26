@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="mid_grey">#2D2D2F</color>
+    <color name="dark_grey">#272727</color>
+    <color name="text_color">#F9F57C</color>
+    <color name="interface_text_color">#DFDD99</color>
+    <color name="unpressed_button_bg">#EADA48</color>
+    <color name="pressed_button_bg">#A19A5D</color>
+    <color name="unchecked_switch_handle_stroke">#676767</color>
+    <color name="checked_switch_handle_stroke">#85D145</color>
+    <color name="switch_handle_color">#8A8A8A</color>
+
+</resources>

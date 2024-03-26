@@ -1,0 +1,23 @@
+<resources>
+
+    <!--Project Naming-->
+    <string name="app_name" translatable="false">KeyGenerator</string>
+
+    <!--Activity textView and Buttons texts-->
+    <string name="home_screen_greeting">Welcome to the</string>
+    <string name="home_screen_call">Password Generator</string>
+    <string name="key_parametrization">Password Parameters</string>
+    <string name="button_text">Generate</string>
+
+    <!--Key parametrization switches(chips) texts-->
+    <string name="upper_case_letters">Upper Case Letters</string>
+    <string name="lower_case_letters">Lower Case Letters</string>
+    <string name="digits">Digits (0 to 9)</string>
+    <string name="punctuation">Punctuations</string>
+
+    <!--Group members full names-->
+    <string name="member_0" translatable="false">Isaque Aleixo Amancio</string>
+    <string name="member_1" translatable="false">João Victor de Souza Benigno</string>
+    <string name="member_2" translatable="false">Nathalia Santana Fonseca</string>
+
+</resources>
