@@ -41,14 +41,14 @@ class MainActivity : ComponentActivity() {
 
                 var resultString: String = ""
 
-                if (upperCaseCheckbox.isActivated || lowerCaseCheckbox.isActivated || digitsCheckbox.isActivated || punctuatuionCheckbox.isActivated) {
-                    if (upperCaseCheckbox.isActivated) {
+                if (upperCaseCheckbox.isChecked || lowerCaseCheckbox.isChecked || digitsCheckbox.isChecked || punctuatuionCheckbox.isChecked) {
+                    if (upperCaseCheckbox.isChecked) {
                         resultString += upperCaseLetters
-                    } ; else if (lowerCaseCheckbox.isActivated) {
+                    } ; if (lowerCaseCheckbox.isChecked) {
                         resultString += lowerCaseLetters
-                    } ; else if (digitsCheckbox.isActivated) {
+                    } ; if (digitsCheckbox.isChecked) {
                         resultString += digits
-                    } ; else if (punctuatuionCheckbox.isActivated) {
+                    } ; if (punctuatuionCheckbox.isChecked) {
                         resultString += punctuation
                     }
                 else {
