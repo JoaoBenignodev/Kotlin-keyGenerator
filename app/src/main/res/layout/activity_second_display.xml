@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layering"
+    android:padding="10dp"
+    android:gravity="center"
+    android:hapticFeedbackEnabled="true"
+    android:orientation="vertical"
+    >
+
+    <!--App Greeting-->
+
+    <!--Password Generator-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/view_title"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="25sp" />
+
+    <!--Password Parametrization-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/view_member_isaque"
+        android:textAlignment="center"
+        android:textColor="@color/interface_text_color"
+        android:textSize="18sp"
+        />
+
+    <!--Upper Case letters - selector-->
+
+    <!--Lower Case letters - selector-->
+
+    <!--Digit characters - selector-->
+
+    <!--Punctuation characters - selector-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/view_member_joao"
+        android:textAlignment="center"
+        android:textColor="@color/interface_text_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/view_member_nathalia"
+        android:textAlignment="center"
+        android:textColor="@color/interface_text_color"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bt_return"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/button_styling"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/button_back"
+        android:textAlignment="center"
+        android:textColor="@color/dark_grey"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:onClick="generate"
+        android:textSize="25sp"
+        />
+
+</LinearLayout>

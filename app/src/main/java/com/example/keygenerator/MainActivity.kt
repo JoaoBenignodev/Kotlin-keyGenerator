@@ -5,6 +5,7 @@ import android.widget.Toast
 import android.widget.Button
 import android.widget.TextView
 import android.widget.CheckBox
+import android.widget.ImageButton
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -16,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.keygenerator.ui.theme.KeyGeneratorTheme
 import java.lang.StringBuilder
+import android.content.Intent
 
 
 class MainActivity : ComponentActivity() {
@@ -29,6 +31,7 @@ class MainActivity : ComponentActivity() {
         val punctuatuionCheckbox = findViewById<CheckBox>(R.id.punctuationCheckbox)
         val generateButton = findViewById<Button>(R.id.generateButton)
         val generatedPassword = findViewById<TextView>(R.id.generatedKey)
+        val switchActiv = findViewById<Button>(R.id.img_btn_members)
 
         class RandomizedKeyGenerator {
 
@@ -76,6 +79,10 @@ class MainActivity : ComponentActivity() {
 
             generatedPassword.text = (randomizerObj.generateRandomKey(randomizerObj.characterSelection()))
 
+        }
+        switchActiv.setOnClickListener {
+            val intent = Intent(this, SecondDisplay::class.java)
+            startActivity(intent)
         }
         }
     }

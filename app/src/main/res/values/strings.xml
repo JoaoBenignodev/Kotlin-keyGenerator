@@ -8,6 +8,12 @@
     <string name="home_screen_call">Password Generator</string>
     <string name="key_parametrization">Password Parameters</string>
     <string name="button_text">Generate</string>
+    <string name="button_back">Return</string>
+    <string name="view_title">Members:</string>
+    <string name="view_member_isaque">Isaque Aleixo Amancio</string>
+    <string name="view_member_joao">Joao Victor de Souza Benigno</string>
+    <string name="view_member_nathalia">Nathalia Santana Fonseca</string>
+
 
     <!--Key parametrization switches(chips) texts-->
     <string name="upper_case_letters">Upper Case Letters</string>

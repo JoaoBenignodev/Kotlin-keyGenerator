@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_layering"
-    android:padding="10dp"
     android:gravity="center"
     android:hapticFeedbackEnabled="true"
     android:orientation="vertical"
-    >
+    android:padding="10dp">
 
     <!--App Greeting-->
+
+    <Button
+        android:id="@+id/img_btn_members"
+        android:layout_width="79dp"
+        android:layout_height="72dp"
+        android:scaleType="center"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/button_styling" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,8 +27,7 @@
         android:text="@string/home_screen_greeting"
         android:textAlignment="center"
         android:textColor="@color/text_color"
-        android:textSize="20sp"
-        />
+        android:textSize="20sp" />
 
     <!--Password Generator-->
     <TextView
@@ -29,8 +37,7 @@
         android:text="@string/home_screen_call"
         android:textAlignment="center"
         android:textColor="@color/text_color"
-        android:textSize="25sp"
-        />
+        android:textSize="25sp" />
 
     <!--Password Parametrization-->
     <TextView
@@ -42,8 +49,7 @@
         android:text="@string/key_parametrization"
         android:textAlignment="center"
         android:textColor="@color/interface_text_color"
-        android:textSize="18sp"
-        />
+        android:textSize="18sp" />
 
     <!--Upper Case letters - selector-->
     <CheckBox
@@ -69,8 +75,7 @@
         android:fontFamily="@font/poppins_semibold"
         android:padding="7dp"
         android:text="@string/lower_case_letters"
-        android:textColor="@color/interface_text_color"
-        />
+        android:textColor="@color/interface_text_color" />
 
     <!--Digit characters - selector-->
     <CheckBox
@@ -84,8 +89,7 @@
         android:fontFamily="@font/poppins_semibold"
         android:padding="7dp"
         android:text="@string/digits"
-        android:textColor="@color/interface_text_color"
-        />
+        android:textColor="@color/interface_text_color" />
 
     <!--Punctuation characters - selector-->
     <CheckBox
@@ -99,27 +103,25 @@
         android:fontFamily="@font/poppins_semibold"
         android:padding="7dp"
         android:text="@string/punctuation"
-        android:textColor="@color/interface_text_color"
-        />
+        android:textColor="@color/interface_text_color" />
 
     <Button
         android:id="@+id/generateButton"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
+        android:background="@drawable/button_styling"
+        android:clickable="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:onClick="generate"
         android:paddingTop="15dp"
         android:paddingBottom="10dp"
-        android:background="@drawable/button_styling"
-        android:fontFamily="@font/poppins_semibold"
         android:text="@string/button_text"
         android:textAlignment="center"
-        android:textColor="@color/dark_grey"
         android:textAllCaps="false"
-        android:textStyle="bold"
-        android:clickable="true"
-        android:onClick="generate"
+        android:textColor="@color/dark_grey"
         android:textSize="25sp"
-        />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/generatedKey"
@@ -127,11 +129,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:fontFamily="@font/source_code_pro_medium"
+        android:selectAllOnFocus="true"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:textSize="22sp"
         android:textIsSelectable="true"
-        android:selectAllOnFocus="true"
-        />
+        android:textSize="22sp" />
 
 </LinearLayout>
