@@ -40,40 +40,48 @@ class MainActivity : ComponentActivity() {
             private val digits: String = "0123456789"
             private val punctuation: String = "@#_-^~`!?'\"$()+=-/[]{}|"
 
-            fun characterSelection(): String{
-
-                var resultString: String = ""
+            fun characterSelection(): String? {
+                var resultString: String? = null
 
                 if (upperCaseCheckbox.isChecked || lowerCaseCheckbox.isChecked || digitsCheckbox.isChecked || punctuationCheckbox.isChecked) {
+                    val stringBuilder = StringBuilder()
+
                     if (upperCaseCheckbox.isChecked) {
-                        resultString += upperCaseLetters
-                    } ; if (lowerCaseCheckbox.isChecked) {
-                        resultString += lowerCaseLetters
-                    } ; if (digitsCheckbox.isChecked) {
-                        resultString += digits
-                    } ; if (punctuationCheckbox.isChecked) {
-                        resultString += punctuation
+                        stringBuilder.append(upperCaseLetters)
                     }
-                else {
+                    if (lowerCaseCheckbox.isChecked) {
+                        stringBuilder.append(lowerCaseLetters)
+                    }
+                    if (digitsCheckbox.isChecked) {
+                        stringBuilder.append(digits)
+                    }
+                    if (punctuationCheckbox.isChecked) {
+                        stringBuilder.append(punctuation)
+                    }
+
+                    resultString = stringBuilder.toString()
+                } else {
                     Toast.makeText(this@MainActivity, "At least one of the characters needs to be selected!", Toast.LENGTH_SHORT).show()
-                    }
                 }
 
                 return resultString
             }
 
-            fun generateRandomKey(selectedCharacters: String): String{
+            fun generateRandomKey(selectedCharacters: String?): String {
+                selectedCharacters?.let {
+                    val length: Int = 26
+                    val keySampleSB = StringBuilder(length)
 
-                val length: Int = 28
-                val keySampleSB = StringBuilder(length)
-
-                for (i in 0 until length) {
-                    val randomizer: Int = (selectedCharacters.indices).random()
-                    keySampleSB.append(selectedCharacters[randomizer])
+                    for (i in 0 until length) {
+                        val randomizer: Int = (it.indices).random()
+                        keySampleSB.append(it[randomizer])
+                    }
+                    return keySampleSB.toString()
                 }
-                return keySampleSB.toString()
+                return ""
             }
         }
+
         val randomizerObj = RandomizedKeyGenerator()
         generateButton.setOnClickListener{
 

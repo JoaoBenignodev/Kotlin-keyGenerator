@@ -58,7 +58,7 @@
         android:clickable="true"
         android:fontFamily="@font/poppins_semibold"
         android:onClick="generate"
-        android:paddingTop="15dp"
+        android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:text="@string/button_text"
         android:textAlignment="center"
