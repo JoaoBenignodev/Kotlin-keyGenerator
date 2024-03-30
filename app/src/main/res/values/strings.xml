@@ -3,17 +3,14 @@
     <!--Project Naming-->
     <string name="app_name" translatable="false">KeyGenerator</string>
 
-    <!--Activity textView and Buttons texts-->
+    <!--Activities textViews and Buttons texts-->
     <string name="home_screen_greeting">Welcome to the</string>
     <string name="home_screen_call">Password Generator</string>
     <string name="key_parametrization">Password Parameters</string>
     <string name="button_text">Generate</string>
     <string name="button_back">Return</string>
-    <string name="view_title">Members:</string>
-    <string name="view_member_isaque">Isaque Aleixo Amancio</string>
-    <string name="view_member_joao">Joao Victor de Souza Benigno</string>
-    <string name="view_member_nathalia">Nathalia Santana Fonseca</string>
-
+    <string name="second_view_title">Members:</string>
+    <string name="app_credits_button">App Credits</string>
 
     <!--Key parametrization switches(chips) texts-->
     <string name="upper_case_letters">Upper Case Letters</string>
@@ -21,9 +18,12 @@
     <string name="digits">Digits (0 to 9)</string>
     <string name="punctuation">Punctuations</string>
 
-    <!--Group members full names-->
+    <!--Group members full names and RAs-->
     <string name="member_0" translatable="false">Isaque Aleixo Amancio</string>
+    <string name="member_0_ra" translatable="false">2300405</string>
     <string name="member_1" translatable="false">João Victor de Souza Benigno</string>
+    <string name="member_1_ra" translatable="false">2301866</string>
     <string name="member_2" translatable="false">Nathalia Santana Fonseca</string>
+    <string name="member_2_ra" translatable="false">2301607</string>
 
 </resources>

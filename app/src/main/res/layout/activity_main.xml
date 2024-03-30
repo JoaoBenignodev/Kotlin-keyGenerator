@@ -11,23 +11,16 @@
     android:padding="10dp">
 
     <!--App Greeting-->
-
-    <Button
-        android:id="@+id/img_btn_members"
-        android:layout_width="79dp"
-        android:layout_height="72dp"
-        android:scaleType="center"
-        android:onClick="onClick"
-        app:srcCompat="@drawable/button_styling" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/home_screen_greeting"
         android:textAlignment="center"
         android:textColor="@color/text_color"
-        android:textSize="20sp" />
+        android:textSize="25sp"
+        />
 
     <!--Password Generator-->
     <TextView
@@ -37,79 +30,30 @@
         android:text="@string/home_screen_call"
         android:textAlignment="center"
         android:textColor="@color/text_color"
-        android:textSize="25sp" />
+        android:textSize="30sp"
+        />
 
     <!--Password Parametrization-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/key_parametrization"
         android:textAlignment="center"
         android:textColor="@color/interface_text_color"
-        android:textSize="18sp" />
+        android:textSize="20sp"
+        />
 
-    <!--Upper Case letters - selector-->
-    <CheckBox
-        android:id="@+id/upperCaseSelector"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:button="@drawable/checkbox_style"
-        android:checked="true"
-        android:fontFamily="@font/poppins_semibold"
-        android:padding="7dp"
-        android:text="@string/upper_case_letters"
-        android:textColor="@color/interface_text_color" />
+    <include layout="@layout/card_view_activity"/>
 
-    <!--Lower Case letters - selector-->
-    <CheckBox
-        android:id="@+id/lowerCaseCheckbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:button="@drawable/checkbox_style"
-        android:checked="true"
-        android:fontFamily="@font/poppins_semibold"
-        android:padding="7dp"
-        android:text="@string/lower_case_letters"
-        android:textColor="@color/interface_text_color" />
-
-    <!--Digit characters - selector-->
-    <CheckBox
-        android:id="@+id/digitsCheckbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:button="@drawable/checkbox_style"
-        android:checked="true"
-        android:focusable="true"
-        android:fontFamily="@font/poppins_semibold"
-        android:padding="7dp"
-        android:text="@string/digits"
-        android:textColor="@color/interface_text_color" />
-
-    <!--Punctuation characters - selector-->
-    <CheckBox
-        android:id="@+id/punctuationCheckbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:button="@drawable/checkbox_style"
-        android:checked="true"
-        android:focusable="true"
-        android:fontFamily="@font/poppins_semibold"
-        android:padding="7dp"
-        android:text="@string/punctuation"
-        android:textColor="@color/interface_text_color" />
-
+    <!--Generate Password Button-->
     <Button
         android:id="@+id/generateButton"
-        android:layout_width="250dp"
+        android:layout_width="245dp"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_margin="20dp"
         android:background="@drawable/button_styling"
         android:clickable="true"
         android:fontFamily="@font/poppins_semibold"
@@ -121,18 +65,51 @@
         android:textAllCaps="false"
         android:textColor="@color/dark_grey"
         android:textSize="25sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        />
 
+    <!--Generated password-->
     <TextView
         android:id="@+id/generatedKey"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/source_code_pro_medium"
         android:selectAllOnFocus="true"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textIsSelectable="true"
-        android:textSize="22sp" />
+        android:textSize="22sp"
+        />
+
+    <!--Credits Change Activity Button-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="end"
+        android:clickable="true">
+
+        <Button
+            android:id="@+id/img_btn_members"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="73dp"
+            android:background="@drawable/arrow_right"
+            android:onClick="transition"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="13sp"
+            android:paddingTop="5dp"
+            android:text="@string/app_credits_button"
+            android:textColor="@color/interface_text_color"
+            />
+
+    </RelativeLayout>
 
 </LinearLayout>

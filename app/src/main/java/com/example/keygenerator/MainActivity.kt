@@ -28,14 +28,14 @@ class MainActivity : ComponentActivity() {
         val upperCaseCheckbox = findViewById<CheckBox>(R.id.upperCaseSelector)
         val lowerCaseCheckbox = findViewById<CheckBox>(R.id.lowerCaseCheckbox)
         val digitsCheckbox = findViewById<CheckBox>(R.id.digitsCheckbox)
-        val punctuatuionCheckbox = findViewById<CheckBox>(R.id.punctuationCheckbox)
+        val punctuationCheckbox = findViewById<CheckBox>(R.id.punctuationCheckbox)
         val generateButton = findViewById<Button>(R.id.generateButton)
         val generatedPassword = findViewById<TextView>(R.id.generatedKey)
-        val switchActiv = findViewById<Button>(R.id.img_btn_members)
+        val switchActivity = findViewById<Button>(R.id.img_btn_members)
 
         class RandomizedKeyGenerator {
 
-            private val upperCaseLetters: String = "BCDEFGHIJKLMNOPQRSTUVWXYZ"
+            private val upperCaseLetters: String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
             private val lowerCaseLetters: String = "abcdefghijklmnopqrstuvwxyz"
             private val digits: String = "0123456789"
             private val punctuation: String = "@#_-^~`!?'\"$()+=-/[]{}|"
@@ -44,14 +44,14 @@ class MainActivity : ComponentActivity() {
 
                 var resultString: String = ""
 
-                if (upperCaseCheckbox.isChecked || lowerCaseCheckbox.isChecked || digitsCheckbox.isChecked || punctuatuionCheckbox.isChecked) {
+                if (upperCaseCheckbox.isChecked || lowerCaseCheckbox.isChecked || digitsCheckbox.isChecked || punctuationCheckbox.isChecked) {
                     if (upperCaseCheckbox.isChecked) {
                         resultString += upperCaseLetters
                     } ; if (lowerCaseCheckbox.isChecked) {
                         resultString += lowerCaseLetters
                     } ; if (digitsCheckbox.isChecked) {
                         resultString += digits
-                    } ; if (punctuatuionCheckbox.isChecked) {
+                    } ; if (punctuationCheckbox.isChecked) {
                         resultString += punctuation
                     }
                 else {
@@ -64,7 +64,7 @@ class MainActivity : ComponentActivity() {
 
             fun generateRandomKey(selectedCharacters: String): String{
 
-                val length: Int = 32
+                val length: Int = 28
                 val keySampleSB = StringBuilder(length)
 
                 for (i in 0 until length) {
@@ -80,7 +80,7 @@ class MainActivity : ComponentActivity() {
             generatedPassword.text = (randomizerObj.generateRandomKey(randomizerObj.characterSelection()))
 
         }
-        switchActiv.setOnClickListener {
+        switchActivity.setOnClickListener {
             val intent = Intent(this, SecondDisplay::class.java)
             startActivity(intent)
         }

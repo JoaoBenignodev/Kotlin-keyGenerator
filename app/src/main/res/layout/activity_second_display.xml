@@ -10,62 +10,91 @@
     android:orientation="vertical"
     >
 
-    <!--App Greeting-->
-
-    <!--Password Generator-->
-
+    <!--Page Naming-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
-        android:text="@string/view_title"
+        android:text="@string/second_view_title"
         android:textAlignment="center"
         android:textColor="@color/text_color"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        />
 
-    <!--Password Parametrization-->
+    <!--Members Names an RAs-->
+    <!--Member-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="15dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="@string/view_member_isaque"
+        android:text="@string/member_0"
         android:textAlignment="center"
         android:textColor="@color/interface_text_color"
         android:textSize="18sp"
         />
 
-    <!--Upper Case letters - selector-->
+    <!--RA-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/member_0_ra"
+        android:textAlignment="center"
+        android:textColor="@color/interface_text_color"
+        android:textSize="12sp"
+        />
 
-    <!--Lower Case letters - selector-->
-
-    <!--Digit characters - selector-->
-
-    <!--Punctuation characters - selector-->
-
+    <!--Member-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="15dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="@string/view_member_joao"
+        android:text="@string/member_1"
         android:textAlignment="center"
         android:textColor="@color/interface_text_color"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        />
 
+    <!--RA-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/member_1_ra"
+        android:textAlignment="center"
+        android:textColor="@color/interface_text_color"
+        android:textSize="12sp"
+        />
+
+    <!--Member-->
     <TextView
         android:layout_width="272dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="15dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="@string/view_member_nathalia"
+        android:text="@string/member_2"
         android:textAlignment="center"
         android:textColor="@color/interface_text_color"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        />
 
+    <!--RA-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/member_2_ra"
+        android:textAlignment="center"
+        android:textColor="@color/interface_text_color"
+        android:textSize="12sp"
+        />
+
+    <!--Return to Home page Button-->
     <Button
         android:id="@+id/bt_return"
         android:layout_width="250dp"
@@ -81,7 +110,6 @@
         android:textAllCaps="false"
         android:textStyle="bold"
         android:clickable="true"
-        android:onClick="generate"
         android:textSize="25sp"
         />
 

@@ -6,7 +6,8 @@
     <color name="dark_grey">#272727</color>
     <color name="text_color">#F9F57C</color>
     <color name="interface_text_color">#DFDD99</color>
-    <color name="unpressed_button_bg">#EADA48</color>
+    <color name="interface_bg_color">#EADA48</color>
+    <color name="unpressed_button_bg">#F3E35A</color>
     <color name="pressed_button_bg">#A19A5D</color>
     <color name="unchecked_switch_handle_stroke">#676767</color>
     <color name="checked_switch_handle_stroke">#85D145</color>

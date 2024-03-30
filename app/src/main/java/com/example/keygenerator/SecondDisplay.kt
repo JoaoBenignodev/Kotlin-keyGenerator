@@ -12,14 +12,12 @@ class SecondDisplay : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second_display)
-        val btnn_back = findViewById<Button>(R.id.bt_return)
-        btnn_back.setOnClickListener {
+
+        val backButton = findViewById<Button>(R.id.bt_return)
+
+        backButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-
         }
-
-
-
         }
     }
